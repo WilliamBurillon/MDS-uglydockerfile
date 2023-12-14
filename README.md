@@ -24,6 +24,7 @@ yarn build
 ````
 docker build -t horribledocker:1.0.0 .
 docker run -p 8000:80 horribledocker:1.0.0
+
 ```
 
 Then Go to `http://localhost:8000/` 

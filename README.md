@@ -21,7 +21,7 @@ yarn build
 
 ### Run the Docker File 
 
-````
+```
 docker build -t horribledocker:1.0.0 .
 docker run -p 8000:80 horribledocker:1.0.0
 

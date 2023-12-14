@@ -14,10 +14,11 @@ RUN npm run build
 
 # Installation de Nginx sur la même image
 RUN apt-get update
-RUN  apt-get install -y nginx python 
+RUN  apt-get install -y nginx python3
 
 # Copie des fichiers de build vers le dossier de Nginx
-RUN cp -r /app/dist/* /usr/share/nginx/html/
+RUN cp -r /app/dist/* /var/www/html
 
+EXPOSE 80
 # Démarrage de Nginx
 CMD ["nginx", "-g", "daemon off;"]

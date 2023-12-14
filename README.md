@@ -1,4 +1,8 @@
-# mon-projet-vue-test
+# MDS-uglydockerfile
+
+The goal to this project is to show what is an horible Dockerfile. 
+
+
 
 ## Project setup
 ```
@@ -15,10 +19,11 @@ yarn serve
 yarn build
 ```
 
-### Lints and fixes files
-```
-yarn lint
+### Run the Docker File 
+
+````
+docker build -t horribledocker:1.0.0 .
+docker run -p 8000:80 horribledocker:1.0.0
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Then Go to `http://localhost:8000/` 
